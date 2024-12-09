@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1, user-scalable=no">
+    <title>inFAMOUS: Second Son - Informações</title>
+    <link rel="icon" href="../imagens/Logo.ico" type="image/x-icon" />
+    <style>
+        /* Define a estrutura geral do layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-image: url('https://images6.alphacoders.com/567/567302.jpg');
+            background-position: center center;
+            background-attachment: fixed;
+            overflow-x: hidden; /* Evitar scroll horizontal */
+        }
+
+        /* Cabeçalho com um fundo escuro e texto centralizado */
+        header, footer {
+            background-color: rgba(34, 34, 34, 0.8);
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+        }
+
+        /* Navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Container principal com conteúdo */
+        .container {
+            width: 90%; /* Ajusta a largura para permitir mais visibilidade */
+            max-width: 1200px; /* Limita a largura máxima para evitar que o conteúdo fique esticado */
+            margin: 20px auto;
+            background-color: #868585ec;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 2rem;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section p, .section ul {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: rgb(3, 3, 3);
+        }
+
+        .characters-list, .trophies-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .characters-list li, .trophies-list li {
+            margin: 5px 0;
+        }
+
+        .character-card {
+            background-color: #ccc5c5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .character-card h3 { color: #333;}
+
+        /* Estilos para as imagens verticais nas laterais */
+        .side-image {
+            position: absolute;
+            top: 23%;
+            transform: translateY(-50%);
+            width: 332px;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        .left-side-image {
+            left: 0;
+        }
+
+        .right-side-image {
+            right: 0;
+        }
+
+        .side-image.visible {
+            opacity: 1;
+        }
+
+        .imagem-center {
+            transform: translateX(65%);
+            width: 500px;
+        }
+
+        /* Ajustes para a responsividade */
+        @media (max-width: 1024px) {
+            body {
+                padding: 0 20px; /* Adiciona um pouco de espaçamento nas laterais */
+            }
+
+            .container { width: 100%; }
+
+            nav {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            nav a {
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 24px; }
+            nav a { padding: 10px; font-size: 14px;}
+            footer p { font-size: 12px; }
+            .side-image { display: none; }
+            /* Esconde as imagens laterais em telas pequenas */
+        }
+
+        /* Estilo para a imagem centralizada no final da página */
+        .end-image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .end-image-container img {
+            max-width: 40%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>inFAMOUS: Second Son</h1>
+        <p>Seu guia definitivo para explorar histórias de jogos, desbloquear conquistas, descobrir segredos ocultos e mergulhar nos detalhes mais profundos do universo gamer!</p>
+    </header>
+
+    <nav>
+        <a href="../Inicio.html">Inicio</a>
+        <a href="#historia">História</a>
+        <a href="#personagens">Personagens</a>
+        <a href="../inFamousSecond Son/infamousTL.html">Informações</a>
+    </nav>
+
+    <div class="container">
+        <section id="historia" class="section">
+            <h2>História</h2>
+            <div class="character-card">
+                <p>O jogo <strong>inFAMOUS: Second Son</strong> é ambientado sete anos após os eventos de <strong>inFAMOUS 2</strong>, em um mundo onde pessoas com habilidades sobre-humanas, conhecidas como Conduits, são vistas como uma ameaça à sociedade. O governo formou o Departamento de Proteção Unificada (D.U.P.) para caçar e controlar esses indivíduos, rotulando-os como "bioterroristas".
+                    A trama se passa em uma versão fictícia de Seattle e segue <strong>Delsin Rowe</strong>, um jovem de 24 anos rebelde e carismático. Delsin é um artista de rua que constantemente desafia a autoridade e mora na Reserva Akomish, uma comunidade nativa americana. Ele tem um relacionamento complicado, mas afetuoso, com seu irmão mais velho, <strong>Reggie Rowe</strong>, um policial dedicado.
+                </p>
+            </div>
+            <h2>O Despertar de Delsin</h2>
+            <div class="character-card">
+                <p>A história começa quando um transporte da D.U.P. que contém prisioneiros Conduits sofre um acidente perto da reserva de Delsin. Durante o caos, Delsin entra em contato com um Conduit chamado Hank, que possui o poder de controlar fumaça. Esse encontro desperta as habilidades latentes de Delsin, revelando que ele é um "Conduit absorvente",
+                     capaz de copiar os poderes de outros Conduits. Surpreso e assustado com suas novas habilidades, Delsin percebe que agora é um alvo para a D.U.P.
+                     Logo após o incidente, a líder implacável da D.U.P., <strong>Brooke Augustine</strong>, chega à reserva para capturar os prisioneiros fugitivos. Quando descobre que Delsin é um Conduit, Augustine usa seus poderes de concreto para torturar os membros da tribo Akomish, deixando muitos gravemente feridos e incapazes de se mover. Delsin promete encontrar Augustine e roubar seus poderes para salvar sua tribo.
+                </p>
+            </div>
+            <h2>Jornada para Seattle</h2>
+            <div class="character-card">
+                <p>Delsin, acompanhado por Reggie, parte para Seattle, agora sob ocupação militar da D.U.P. A cidade é cercada por postos de controle, drones e tropas que garantem que nenhum Conduit escape do controle. Enquanto Reggie tenta agir de forma racional e seguir a lei, Delsin se preocupa mais em usar seus poderes para lutar contra a opressão e confrontar Augustine.
+                    Durante sua jornada, Delsin encontra outros Conduits que estão sendo perseguidos pela D.U.P.:
+                    <br>
+                    <br>
+                    <strong>1º Fetch (Abigail Walker)</strong> Uma jovem Conduit com o poder de controlar neon. Fetch tem um passado traumático envolvendo drogas e a morte de seu irmão. Inicialmente, ela age como uma criminosa, mas Delsin a ajuda a canalizar sua raiva para algo mais produtivo.
+                    <br>
+                    <br>
+                    <strong>2º Eugene Sims:</strong> Um Conduit recluso que controla vídeo, permitindo que ele invoque criaturas digitais para lutar ao seu lado. Eugene foi vítima de bullying e encontra conforto no mundo dos videogames e na internet. Com o apoio de Delsin, ele supera sua insegurança e decide usar seus poderes para proteger outros Conduits.
+                    <br>
+                    <br>
+                    Delsin absorve os poderes de Fetch e Eugene, aumentando suas habilidades e se tornando uma ameaça ainda maior para a D.U.P.
+                </p>
+            </div>
+            <h2>Conflito com Augustine</h2>
+            <div class="character-card">
+                <p>Ao longo da história, Delsin e Reggie entram em conflito constante sobre como lidar com os problemas que enfrentam. Reggie acredita que os Conduits são perigosos e deseja capturar Augustine legalmente, enquanto Delsin vê a destruição da D.U.P. como a única maneira de libertar sua tribo e outros Conduits.
+                Eventualmente, eles conseguem confrontar Augustine em sua fortaleza. Durante a batalha, Reggie é capturado por Augustine, que usa seus poderes para esmagá-lo sob concreto, resultando em sua morte. Devastado pela perda de seu irmão, Delsin promete derrubar Augustine e acabar com sua opressão.
+                </p>
+            </div>
+            <h2>Decisões Morais</h2>
+            <div class="character-card">
+                <p>Ao longo do jogo, os jogadores podem fazer escolhas que moldam o caráter de Delsin e o desfecho da história. As decisões afetam não apenas seus relacionamentos com outros personagens, como Fetch e Eugene, mas também como ele é visto pela população de Seattle:
+                    <br>
+                    <br>
+                    <strong>• Caminho do Bem:</strong> Delsin usa seus poderes para ajudar as pessoas e libertar Seattle pacificamente. Ele inspira Fetch e Eugene a se tornarem heróis e, no final, poupa Augustine, mas a expõe publicamente como uma tirana, destruindo a D.U.P.
+                    <br>
+                    <br>
+                    <strong>• Caminho do Mal:</strong> Delsin age com violência e desprezo pelas pessoas, instigando o medo e destruindo tudo em seu caminho. Ele corrompe Fetch e Eugene para seus próprios objetivos e mata Augustine, assumindo o controle como o Conduit mais poderoso.
+                </p>
+            </div>
+            <h2>Final</h2>
+            <div class="character-card">
+                <p>Depois de derrotar Augustine e libertar Seattle, Delsin retorna à reserva Akomish. No final positivo, ele cura os membros de sua tribo usando os poderes de concreto que absorveu de Augustine, sendo celebrado como um herói. No final negativo, sua tribo rejeita Delsin por suas ações cruéis, levando-o a usar seus poderes para destruir todos em um ato de vingança.</p>
+            </div>
+        </section>
+        
+        <section id="personagens" class="section">
+            <h2>Personagens Principais</h2>
+            <div class="character-card">
+                <h3>Delsin Rowe</h3>
+                <p>O protagonista do jogo, um jovem rebelde de 24 anos que mora em Seattle. Ele ganha a habilidade de absorver poderes de outros Conduits (indivíduos com habilidades sobrenaturais) após um encontro com o Conduit chamado Hank. Delsin é impetuoso, determinado e busca justiça, muitas vezes desafiando a autoridade.</p>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCPwjUemhjUb0FSyvlm4uDH5QHsO_SsOjCMg&usqp=CAU" alt="Imagem do Delsin" class="imagem-center">
+            </div>
+            <div class="character-card">
+                <h3>Reggie Rowe</h3>
+                <p>Irmão mais velho de Delsin, um policial dedicado e moralmente correto. Reggie tenta manter Delsin na linha e protegê-lo, mas seus ideais de justiça entram em conflito com os métodos de Delsin. Ao longo do jogo, ele se vê dividido entre apoiar seu irmão e seguir a lei.</p>
+                <img src="https://pm1.aminoapps.com/6726/34767acd449aac34f4ce714dad4c77ad78b01034v2_00.jpg" alt="Imagem de Reggie" class="imagem-center">
+            </div>
+            <div class="character-card">
+                <h3>Abigail Walker (Fetch)</h3>
+                <p>Uma Conduit com o poder de controlar neon. Inicialmente, ela é apresentada como uma criminosa e inimiga de Delsin, mas as escolhas do jogador podem moldar sua relação, podendo ela se tornar uma aliada. Fetch tem um passado difícil e está em busca de vingança, mas também busca redenção.</p>
+                <img src="https://img.goodfon.com/original/2048x1375/a/b1/badfon-infamous-first-light-dlc.jpg" alt="Imagem da abigail" class="imagem-center">
+            </div>
+            <div class="character-card">
+                <h3>Eugene Sims</h3>
+                <p>Eugene é um Conduit com a habilidade de controlar a luz. Ele pode manipular e criar feixes de luz intensos, sendo um dos poderes mais visualmente impressionantes no jogo. Sua habilidade é muito versátil, podendo ser usada tanto para ataques rápidos quanto para se mover rapidamente através do ambiente.</p>
+                <img src="https://i.quotev.com/z6tz4btlaaaa.jpg" alt="Imagem de Eugene" class="imagem-center">
+            </div>
+            <div class="character-card">
+                <h3>Brooke Augustine</h3>
+                <p>A principal antagonista do jogo, líder do Departamento de Proteção Unificada (D.U.P.), uma organização que caça Conduits. Ela possui o poder de manipular concreto e é uma figura implacável e autoritária, determinada a controlar e subjugar os Conduits a qualquer custo.</p>
+                <img src="https://acmelodyblog.wordpress.com/wp-content/uploads/2017/08/secondsonaugustine.jpg" alt="Imagem da Augustine" class="imagem-center">
+            </div>
+        </section>
+    </div>
+
+    <!-- Imagens verticais nas laterais -->
+    <img src="https://i.pinimg.com/originals/b2/a5/25/b2a525b601fec99aa834dd1cefc62dce.jpg" alt="Imagem Lateral Esquerda" class="side-image left-side-image">
+    <img src="https://pbs.twimg.com/media/D-aLgq5XkAEEfZr.jpg:large" alt="Imagem Lateral Direita" class="side-image right-side-image">
+
+    <!-- Imagem centralizada no final da página -->
+    <div class="end-image-container">
+        <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/2197b808-4a77-4221-8003-51c75d27a40c/d8o6t4c-c3ed253c-f419-473a-9a36-a35f82c87cdf.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzIxOTdiODA4LTRhNzctNDIyMS04MDAzLTUxYzc1ZDI3YTQwY1wvZDhvNnQ0Yy1jM2VkMjUzYy1mNDE5LTQ3M2EtOWEzNi1hMzVmODJjODdjZGYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.BwZLRlnwAw6Wsv0p0PtyOoH16-zRpHhwfmOKuRIXi_o" alt="Imagem Final">
+    </div>
+
+    <footer>
+        <p>&copy; 2024 inFAMOUS: Second Son - Todos os direitos reservados à Sucker Punch Productions</p>
+    </footer>
+
+    <script>
+        // JS para adicionar efeito de fade-in nas imagens laterais
+        window.addEventListener('load', function() {
+            const leftImage = document.querySelector('.left-side-image');
+            const rightImage = document.querySelector('.right-side-image');
+    
+            // Definir um pequeno atraso antes de mostrar as imagens laterais
+            setTimeout(function() {
+                leftImage.classList.add('visible');
+                rightImage.classList.add('visible');
+            }, 500); // Atraso de 500ms para o fade-in
+        });
+    
+        // JS para ampliar a imagem central no final da página ao passar o mouse
+        const endImage = document.querySelector('.end-image-container img');
+    
+        endImage.addEventListener('mouseenter', function() {
+            endImage.style.transform = 'scale(1.2)'; // Aumenta a imagem 20%
+            endImage.style.transition = 'transform 0.3s ease'; // Transição suave
+        });
+    
+        endImage.addEventListener('mouseleave', function() {
+            endImage.style.transform = 'scale(1)'; // Restaura o tamanho original
+        });
+    </script>
+
+</body>
+</html>
