@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8, maximum-scale=1, user-scalable=no">
+    <title>Codex Gamer</title>
+    <link rel="icon" href="../imagens/Logo.ico" type="image/x-icon" />
+    <style>
+        /* Define a estrutura geral do layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-image: url('../imagens/bgi.webp');
+            background-position: center center;
+            background-attachment: absolute;
+            overflow-x: hidden; /* Evitar scroll horizontal */
+        }
+        /* Cabeçalho com um fundo escuro e texto centralizado */
+        header {
+            background-color: rgba(34, 34, 34, 0.8);
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        header h1 {
+            margin: 0;  
+        }
+
+        /* Navegação */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #333;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        nav a {
+            color: #fff;
+            padding: 15px;
+            text-decoration: none;
+            text-align: center;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        /* Container principal com conteúdo */
+        .container {
+            width: 90%; /* Ajusta a largura para permitir mais visibilidade */
+            max-width: 1200px; /* Limita a largura máxima para evitar que o conteúdo fique esticado */
+            margin: 20px auto;
+            background-color: #868585ec;
+            padding: 20px;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: #000000;
+            font-size: 2rem;
+            border-bottom: 2px solid #000000;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        .section {
+            margin-bottom: 50px;
+            text-align: center;
+        }
+
+        .section p, .section ul {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: rgb(3, 3, 3);
+        }
+        .characters-list, .trophies-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .characters-list li, .trophies-list li {
+            margin: 5px 0;
+        }
+
+        .character-card {
+            background-color: #ccc5c5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .character-card h3 {
+            color: #333;
+        }
+
+        /* Ajustes para a responsividade */
+        @media (max-width: 1024px) {
+            body {
+                padding: 0 20px; /* Adiciona um pouco de espaçamento nas laterais */
+            }
+
+            .container {
+                width: 100%;
+            }
+
+            nav {
+                flex-direction: column;
+                padding: 10px 0;
+            }
+
+            nav a {
+                padding: 10px;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 24px;
+            }
+
+            nav a {
+                padding: 10px;
+                font-size: 14px;
+            }
+        }
+
+        /* Estilo para a imagem centralizada no final da página */
+        .end-image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .end-image-container img {
+            max-width: 40%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Codex Gamer!</h1>
+        <p>Seu guia definitivo para explorar jogos, conquistas e muito mais!</p>
+      </header>
+
+    <div class="container">
+        <section id="Inicio" class="section">
+            <h1>Explorando o Universo dos Jogos</h1>
+            <p>Encontre dicas, estratégias e tudo o que você precisa para se tornar um mestre nos jogos!</p>
+        </section>
+
+        <section id="inicio" class="section">
+            <h2>Codex Gamer</h2>
+            <div class="character-card">
+                <p>O Codex Gamer é um site de guia sobre jogos, aqui terá muitas informações sobre os jogos que procura, como resumos, personagens, troféus etc. Aqui você poderá ler sobre os jogos para descobrir o que precisa ser feito ou saber se você realmente queira comprar o jogo. As informações serão atualizadas para que todos os jogos possam estar corretos nas informações dispostas para os consumidores, caso tenha algum jogo novo ou um jogo existente ganhe uma atualização que mude muitas coisas.</p>
+            </div>
+            <div class="character-card">
+                <h3>JOGOS</h3>
+                <div class="end-image-container">
+                    <a href="../inFamousSecond Son/infamousH.html">
+                        <img src="../imagens/infamous.webp" alt="Imagem que leva para outro site sobre o jogo Infamous" width="500" height="300" />
+                    </a>
+                    <a href="../Ratchet&Clank/ratchetH.html">
+                        <img src="../imagens/ratchet.avif" alt="Imagem que leva para outro site sobre o jogo Ratchet e Clank" width="500" height="300" />
+                    </a>
+                </div>
+                
+                
+        </section>
+
+    </div>
+
+    <script>
+        // Seleciona todas as imagens dentro do contêiner
+        const images = document.querySelectorAll('.end-image-container img');
+    
+        // Adiciona os eventos para cada imagem
+        images.forEach(image => {
+            image.addEventListener('mouseenter', function () {
+                image.style.transform = 'scale(1.2)'; // Aumenta 20%
+                image.style.transition = 'transform 0.3s ease'; // Transição suave
+            });
+    
+            image.addEventListener('mouseleave', function () {
+                image.style.transform = 'scale(1)'; // Restaura o tamanho original
+            });
+        });
+    </script>
+    
+</body>
+</html>
