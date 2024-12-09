@@ -311,18 +311,15 @@
     </footer>
 
     <script>
-        // JS para adicionar efeito de fade-in nas imagens laterais
-        window.addEventListener('load', function() {
-            const leftImage = document.querySelector('.left-side-image');
-            const rightImage = document.querySelector('.right-side-image');
-    
-            // Definir um pequeno atraso antes de mostrar as imagens laterais
-            setTimeout(function() {
-                leftImage.classList.add('visible');
-                rightImage.classList.add('visible');
-            }, 500); // Atraso de 500ms para o fade-in
+        const images = document.querySelectorAll('img');
+        images.forEach(img => {
+            img.style.opacity = 0;
+            img.onload = () => {
+                img.style.transition = 'opacity 1s';
+                img.style.opacity = 1;
+            };
         });
-    
+
         // JS para ampliar a imagem central no final da página ao passar o mouse
         const endImage = document.querySelector('.end-image-container img');
     
